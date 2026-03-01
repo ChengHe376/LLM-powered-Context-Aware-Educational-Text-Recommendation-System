@@ -10,7 +10,6 @@ This project demonstrates a complete ML system lifecycle:
 -   📊 Offline evaluation (pos@K / NDCG@K / MRR@K)
 -   🔁 Feedback simulation & Learning-to-Rank training
 -   🌐 Vue + Flask full-stack demo
--   🔐 Production-grade authentication & security design
 
 ------------------------------------------------------------------------
 
