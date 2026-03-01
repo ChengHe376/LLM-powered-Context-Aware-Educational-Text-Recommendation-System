@@ -1,0 +1,27 @@
+@'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+*.log
+
+# Backend artifacts
+backend/data/
+backend/indexes/
+backend/logs/
+backend/models/
+backend/experiments/training/checkpoints/
+
+# Frontend
+frontend/edu-recsys-frontend/node_modules/
+frontend/edu-recsys-frontend/dist/
+frontend/edu-recsys-frontend/.vite/
+frontend/edu-recsys-frontend/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Encoding UTF8 .gitignore

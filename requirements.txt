@@ -1,0 +1,25 @@
+# Web
+Flask==3.0.2
+flask-cors==4.0.0
+
+# Database
+SQLAlchemy==2.0.29
+PyMySQL==1.1.0
+
+# Redis
+redis==5.0.3
+
+# Config
+python-dotenv==1.0.1
+
+# Retrieval / ML
+faiss-cpu==1.7.4
+sentence-transformers==2.6.1
+transformers==4.39.3
+torch>=2.1.0
+
+# Data processing
+numpy==1.26.4
+pandas==2.2.1
+scikit-learn==1.4.1.post1
+tqdm==4.66.2
