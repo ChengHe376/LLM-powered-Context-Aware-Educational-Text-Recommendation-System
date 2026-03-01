@@ -32,12 +32,21 @@ Offline Evaluation & Retraining
 
 # 📂 Project Structure
 
-backend/ experiments/ analysis/ \# Offline evaluation dataset/ \# LTR
-dataset export simulation/ \# Persona-based feedback simulation
-training/ \# Reranker training retrieval/ \# FAISS retriever services/
-\# Rerank logic scripts/ \# Data preprocessing & index building
+```text
+backend/
+  experiments/
+    analysis/       # Offline evaluation
+    dataset/        # LTR dataset export
+    simulation/     # Persona-based feedback simulation
+    training/       # Reranker training
+  retrieval/        # FAISS retriever
+  services/         # Rerank logic
+  scripts/          # Data preprocessing & index building
 
-frontend/ edu-recsys-frontend/ public/ src/
+frontend/
+  edu-recsys-frontend/
+    public/
+    src/
 
 ------------------------------------------------------------------------
 
