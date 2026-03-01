@@ -47,7 +47,7 @@ frontend/
   edu-recsys-frontend/
     public/
     src/
-
+```
 ------------------------------------------------------------------------
 
 # 🚀 Reproducibility Guide
@@ -101,6 +101,7 @@ python experiments/training/train_reranker_v4.py
 
 # 📊 Offline Evaluation
 
+```text
 python experiments/analysis/evaluate_rerank_offline.py\
 --since "2026-02-06 23:45:59"\
 --until "2026-02-07 02:06:40"\
@@ -108,25 +109,37 @@ python experiments/analysis/evaluate_rerank_offline.py\
 --policies "faiss-only,faiss+rerank"
 
 Metrics: - pos@K - NDCG@K - MRR@K
+```
 
+You can segment experiments by querying different time windows
+based on the timestamp stored in the database (e.g., using --since
+and --until) to compare different model versions under controlled
+traffic periods.
 ------------------------------------------------------------------------
 
 # 📈 Experimental Results
 
-  Version               pos@5    NDCG@5   MRR@5
-  --------------------- -------- -------- --------
-  FAISS only            58.65%   0.4600   0.4179
-  v4 (FAISS + Rerank)   63.59%   0.4695   0.4149
-
-v4 improves overall positive coverage under realistic traffic
-distribution and was selected for deployment.
+```text
+Version               pos@5    NDCG@5   MRR@5
+--------------------- -------- -------- --------
+FAISS only            58.65%   0.4600   0.4179
+v4 (FAISS + Rerank)   63.59%   0.4695   0.4149
+```
 
 ------------------------------------------------------------------------
 
 # 🛠 Tech Stack
 
-Backend: - Python - Flask - FAISS - SentenceTransformers - MySQL - Redis
+**Backend**
+- Python
+- Flask
+- FAISS
+- SentenceTransformers
+- MySQL
 
-Frontend: - Vue 3 - Vite - Axios
+**Frontend**
+- Vue 3
+- Vite
+- Axios
 
 ------------------------------------------------------------------------
